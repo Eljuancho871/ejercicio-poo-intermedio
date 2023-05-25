@@ -1,9 +1,9 @@
-import Personaje from "./Personaje";
+import Personaje from "./Personaje.js";
 
 class Jedi extends Personaje {
 
-    #nombre;
-    #fuerza;
+    #nombre = this.get_nombre();
+    #fuerza = this.get_fuerza();
 
     constructor(nombre, fuerza){
 
@@ -12,13 +12,15 @@ class Jedi extends Personaje {
 
     usarFuerza(){
 
-        const msg = "el Jedi está utilizando la Fuerza para proteger la galaxia, su fuerza = " + this.#fuerza;
+        const msg = `el ${this.#nombre} está utilizando la Fuerza para proteger la galaxia, su fuerza = ${this.#fuerza}`;
+        console.log(msg);
     }
 
     entrenar(){
 
         this.#fuerza += 10;
-        const msg = "El jedi subio 10 unidades en su fuerza (" + this.fuerza + ")";
+        const msg = `El ${this.#nombre} subio 10 unidades en su fuerza, actual = (${this.#fuerza})`;
+        console.log(msg);
     }
 }
 

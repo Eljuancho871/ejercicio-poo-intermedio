@@ -1,9 +1,9 @@
-import Jedi from "./Jedi";
+import Jedi from "./Jedi.js";
 
 class MaestroJedi extends Jedi {
 
-    #nombre;
-    #fuerza;
+    #nombre = this.get_nombre();
+    #fuerza = this.get_fuerza();
 
     constructor(nombre, fuerza) {
         
@@ -12,8 +12,9 @@ class MaestroJedi extends Jedi {
 
     enseñar(){
 
-        this.fuerza += 20;
-        const msg = "El nivel de fuerza ha subido 20 unidades";
+        this.#fuerza += 20;
+        const msg = `El nivel de fuerza de ${this.#nombre} ha subido 20 unidades, fuerza actual = ${this.#fuerza}`;
+        console.log(msg);
     }
 }
 
