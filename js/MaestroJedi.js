@@ -13,8 +13,8 @@ class MaestroJedi extends Jedi {
     enseñar(){
 
         this.#fuerza += 20;
-        const msg = `El nivel de fuerza de ${this.#nombre} ha subido 20 unidades, fuerza actual = ${this.#fuerza}`;
-        console.log(msg);
+        const msg = `Nivel de fuerza de ${this.#nombre} ha subido 20 unidades, fuerza actual = ${this.#fuerza}`;
+        return msg;
     }
 }
 

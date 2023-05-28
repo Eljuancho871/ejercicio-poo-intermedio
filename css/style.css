@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     transition: all 0.5s;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -13,7 +14,6 @@ body{
     display: flex;
     justify-content: center;
     align-self: center;
-    margin-bottom: 50px;
 }
 
 h1{
@@ -67,6 +67,15 @@ h3{
     position: relative;
 }
 
+.win{
+    margin: 20px;
+    padding: 10px;
+    background-color: rgb(206, 206, 121);
+    border-radius: 5px;
+    font-size: 30px;
+    display: none;
+}
+
 .vida{
     position: relative;
     display: flex;
@@ -84,8 +93,9 @@ h3{
 }
 
 .msg{
-    width: 400px;
-    height: 300px;
+    width: 450px;
+    height: 350px;
+    padding: 10px;
     margin: 50px;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.543);

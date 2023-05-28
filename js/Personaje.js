@@ -1,3 +1,5 @@
+
+
 class Personaje {
 
     #nombre;
@@ -11,8 +13,8 @@ class Personaje {
 
     presentarse(){
 
-        const msg = `Holaaaa mi nombre es ${this.#nombre} y mi nivel de fuerza es de ${this.#fuerza}`;
-        console.log(msg);
+        const msg = `Holaa mi nombre es ${this.#nombre} y mi nivel de fuerza es de ${this.#fuerza}`;
+        return msg;
     }
 
     get_fuerza(){
